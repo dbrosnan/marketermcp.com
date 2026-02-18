@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How we launched Marketer MCP on the MCP ecosystem | Marketer MCP Blog</title>
+    <meta
+      name="description"
+      content="Our playbook for launching on MCP directories, Product Hunt, and Hacker News — with transparent metrics on what worked and what we'd do differently."
+    />
+    <link rel="canonical" href="https://marketermcp.com/blog/mcp-ecosystem-launch.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://marketermcp.com/blog/mcp-ecosystem-launch.html" />
+    <meta property="og:title" content="How we launched Marketer MCP on the MCP ecosystem" />
+    <meta
+      property="og:description"
+      content="Our playbook for launching on MCP directories, Product Hunt, and Hacker News — transparent metrics on what worked."
+    />
+    <meta property="og:image" content="https://marketermcp.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How we launched Marketer MCP on the MCP ecosystem" />
+    <meta
+      name="twitter:description"
+      content="Our playbook for launching on MCP directories, Product Hunt, and Hacker News — transparent metrics on what worked."
+    />
+    <meta name="twitter:image" content="https://marketermcp.com/og-image.png" />
+    <meta name="theme-color" content="#050610" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+    <header class="container header">
+      <a href="/" class="brand" style="text-decoration:none">marketer<span>mcp</span></a>
+      <nav class="nav">
+        <a href="/#tools">Tools</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#security">Security</a>
+      </nav>
+      <a class="btn btn-small" href="/#waitlist">Join beta</a>
+    </header>
+
+    <main class="container">
+      <section class="card page-content">
+        <p><a href="/blog/">&larr; All posts</a></p>
+        <h1>How we launched Marketer MCP on the MCP ecosystem</h1>
+        <p class="post-meta">February 2026</p>
+        <div class="post-body">
+          <p>The MCP ecosystem grew from roughly 100,000 monthly SDK downloads at its November 2024 launch to over 97 million by early 2026. More than 10,000 servers are now in the official registry. OpenAI, Google, Microsoft, and AWS have all adopted the protocol. The Linux Foundation governs it through the Agentic AI Foundation.</p>
+
+          <p>We built Marketer MCP as the first MCP server designed specifically for marketing operations. This post walks through how we launched into the ecosystem, what channels drove adoption, and what we would do differently.</p>
+
+          <h2>The growth playbook for MCP tools</h2>
+
+          <p>MCP tools do not grow the same way traditional SaaS products do. The ecosystem has its own distribution channels, discovery patterns, and trust signals. After studying how successful MCP servers grew — from Desktop Commander's 80K-view Hacker News run to Docker MCP Catalog's million pulls in weeks — we identified five vectors that matter.</p>
+
+          <h2>1. Directory listings are your app store</h2>
+
+          <p>MCP directories are where developers and marketing ops teams discover new tools. The major directories are:</p>
+
+          <ul>
+            <li><strong>Official MCP registry</strong> on GitHub — the baseline credibility signal.</li>
+            <li><strong>mcp.so</strong> — the largest directory with 17,000+ listings.</li>
+            <li><strong>Glama</strong> — 9,000+ servers, 50,000 businesses, and a ChatGPT-like discovery UI.</li>
+            <li><strong>PulseMCP</strong> — 8,230+ servers with a weekly newsletter that features trending tools.</li>
+            <li><strong>Smithery</strong> — 5,000+ servers with one-click deployment.</li>
+          </ul>
+
+          <p>Servers listed across multiple directories see 300%+ usage growth versus single-listing servers. We submitted to all of them in the first week. The listing copy matters: human-readable descriptions of what the tool does for marketers, not technical implementation details.</p>
+
+          <h2>2. GEO: making AI assistants recommend you</h2>
+
+          <p>Generative Engine Optimization (GEO) is the discipline of making your product discoverable by AI systems — Claude, ChatGPT, Perplexity, Gemini. When a marketer asks their AI assistant "what MCP tools help with budget pacing?" your tool needs to be in the answer.</p>
+
+          <p>We implemented three things:</p>
+          <ul>
+            <li>A <code>llms.txt</code> file at our website root — a plain-language description of what Marketer MCP is, what tools are available, and how to connect. This is the AI equivalent of <code>robots.txt</code>.</li>
+            <li>Extended JSON-LD on our homepage with both <code>SoftwareApplication</code> and <code>WebAPI</code> schema types, giving AI systems structured facts about our API.</li>
+            <li>Content written to be citable: direct answers in the first sentence, specific numbers, and structured facts over narrative fluff.</li>
+          </ul>
+
+          <h2>3. GitHub as a trust signal</h2>
+
+          <p>Open-sourcing the MCP server is not just about code access. It is a trust signal. GitHub's own research shows that open-source MCP servers get adopted faster because evaluators can inspect the implementation, check security practices, and verify claims.</p>
+
+          <p>We enabled GitHub Discussions for community Q&A, published a CHANGELOG for transparent release history, and submitted a PR to the official <code>modelcontextprotocol/servers</code> registry. That PR was the single most important credibility action we took.</p>
+
+          <h2>4. Coordinated launch day</h2>
+
+          <p>We planned a single coordinated launch day across Product Hunt, Hacker News "Show HN," LinkedIn, and X. The playbook:</p>
+
+          <ul>
+            <li>48 hours before: teaser posts on LinkedIn and X, DMs to 30 supporters for Day 1 upvotes.</li>
+            <li>Launch morning: Product Hunt listing live at 12:01 AM PT, Hacker News "Show HN" within 2 hours, founder post on LinkedIn, thread on X.</li>
+            <li>Email to waitlist: "We just launched — help us spread the word."</li>
+            <li>All day: respond to every comment on Product Hunt and Hacker News within 2 hours.</li>
+          </ul>
+
+          <p>Product Hunt launches generate backlinks and SEO authority. Hacker News drives a burst of technical evaluators. LinkedIn reaches the marketing leaders who are the actual buyers. All three channels reinforce each other on the same day.</p>
+
+          <h2>5. Ecosystem newsletters</h2>
+
+          <p>PulseMCP publishes a weekly newsletter that features trending MCP servers. The Pragmatic Engineer covered MCP as a building block for AI dev tools. These are distribution channels that reach people who already want structured AI tools.</p>
+
+          <p>We pitched PulseMCP in week 2 (after directory listings were live) and marketing-focused newsletters in week 3 (after we had launch metrics to share). The pitch was simple: one sentence on what it is, one on why it matters to their audience, one on what is live today, and a link.</p>
+
+          <h2>What we learned</h2>
+
+          <p>The MCP ecosystem has its own distribution physics. Traditional SaaS marketing (paid ads, SEO, content) still matters — but the fastest path to adoption is through the ecosystem itself: directories, AI discoverability, GitHub credibility, coordinated launches, and ecosystem newsletters.</p>
+
+          <p>If you are building an MCP tool, start with the directories. They are free, they compound, and they are where your users are already looking.</p>
+
+          <p><a href="/#waitlist">Join the launch list</a> to try Marketer MCP and see the playbook in action.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/security.html">Security</a>
+      </footer>
+    </main>
+  </body>
+</html>
