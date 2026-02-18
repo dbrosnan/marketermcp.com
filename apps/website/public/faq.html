@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Marketer MCP</title>
+    <meta
+      name="description"
+      content="Frequently asked questions about Marketer MCP — how it works, who it's for, pricing, security, and the product roadmap."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+    <header class="container header">
+      <a href="/" class="brand" style="text-decoration:none">marketer<span>mcp</span></a>
+      <nav class="nav">
+        <a href="/#tools">Tools</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#security">Security</a>
+      </nav>
+      <a class="btn btn-small" href="/#waitlist">Join beta</a>
+    </header>
+
+    <main class="container">
+      <section class="card page-content">
+        <h1>Frequently asked questions</h1>
+
+        <div class="faq-item">
+          <h3>What is Marketer MCP?</h3>
+          <p>Marketer MCP is a public hub of AI tools built specifically for marketing operations. It uses the Model Context Protocol (MCP) standard so your AI assistant can discover and call marketing tools — budget pacing, campaign QA, channel allocation — through a single endpoint.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Who is it for?</h3>
+          <p>Marketing leaders, ops teams, and agencies who manage budgets across paid search, paid social, display, video, and organic channels. If you spend time in spreadsheets reconciling spend or checking campaign setups, Marketer MCP automates that work.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is Budget Buddy?</h3>
+          <p>Budget Buddy is the first live tool on Marketer MCP. It takes your monthly budget and channel-level spend as JSON input and returns a pacing report with over-budget alerts. Response time is under 200ms.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I connect?</h3>
+          <p>You configure your AI assistant (Claude, GPT, or any MCP-compatible client) to connect to the Marketer MCP endpoint. Tool execution requires a Bearer token. Discovery can be public or restricted by your environment policy. See the <a href="/#docs">quickstart</a> for details.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is my data secure?</h3>
+          <p>Yes. All tool execution requires token authentication. Requests are rate-limited, payloads are validated against schemas, and tool execution is namespaced. Structured logs with request IDs provide full auditability. See the <a href="/security.html">security page</a> for details.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What does it cost?</h3>
+          <p>Marketer MCP is free during the beta period. Pricing details for the general availability launch will be published before the beta ends. There is no per-seat model — you pay for usage, not team size.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does it work for agencies with multiple clients?</h3>
+          <p>Yes. Namespaced tool execution means each client's data stays isolated. One connection serves your entire book of business. Auth tokens can be scoped per team or per client.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What tools are on the roadmap?</h3>
+          <p>After Budget Buddy: Channel Allocation Planner, Campaign Flighting Helper, Attribution QA, Creative QA, and Audience Planner. Each tool follows the same pattern — structured input, structured output, built for the specific workflow it serves.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I get early access?</h3>
+          <p><a href="/#waitlist">Join the launch list</a> and we will send you an API token and onboarding guide when your spot opens.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/security.html">Security</a>
+      </footer>
+    </main>
+  </body>
+</html>
