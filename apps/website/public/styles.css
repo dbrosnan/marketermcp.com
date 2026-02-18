@@ -1,0 +1,245 @@
+:root {
+  --bg: #050610;
+  --panel: rgba(7, 12, 34, 0.85);
+  --border: rgba(76, 112, 255, 0.35);
+  --text: #eff2ff;
+  --muted: #b3bfec;
+  --electric: #2b49ff;
+  --cyan: #35ddff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 700px at 20% -10%, #1630b8 0%, transparent 55%),
+    radial-gradient(1000px 600px at 85% 10%, #02136b 0%, transparent 50%), var(--bg);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-glow {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(100px);
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.glow-a {
+  width: 380px;
+  height: 380px;
+  background: var(--cyan);
+  top: -120px;
+  left: -80px;
+}
+
+.glow-b {
+  width: 500px;
+  height: 500px;
+  background: var(--electric);
+  bottom: -200px;
+  right: -120px;
+}
+
+.container {
+  width: min(1080px, 92vw);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 8px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(14px);
+  z-index: 2;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+}
+
+.brand span {
+  color: #7fa0ff;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(21, 33, 92, 0.55), rgba(5, 7, 17, 0.85));
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.hero {
+  padding: clamp(28px, 5vw, 56px);
+  margin-top: 30px;
+}
+
+.kicker {
+  color: #8bc4ff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  margin: 0;
+}
+
+h1 {
+  margin: 12px 0 14px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.lead,
+p,
+li {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(137, 168, 255, 0.75);
+  background: linear-gradient(90deg, #2a47ff, #0e75ff);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+}
+
+.btn:hover {
+  filter: brightness(1.06);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #c8d4ff;
+}
+
+.btn-small {
+  padding: 0.52rem 1rem;
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tool-card {
+  padding: 24px;
+}
+
+.tool-card ul {
+  margin: 16px 0 0;
+  padding-left: 18px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 10px;
+  background: rgba(50, 114, 255, 0.25);
+  color: #9bc2ff;
+  border: 1px solid rgba(137, 168, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.78rem;
+}
+
+.badge.beta {
+  background: rgba(45, 61, 122, 0.35);
+}
+
+.docs,
+.security,
+.waitlist {
+  margin-top: 20px;
+  padding: 24px;
+}
+
+pre {
+  margin: 14px 0;
+  padding: 16px;
+  border-radius: 16px;
+  overflow-x: auto;
+  background: rgba(3, 5, 17, 0.8);
+  border: 1px solid rgba(133, 165, 255, 0.25);
+  color: #bfd1ff;
+}
+
+.security-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.waitlist-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.waitlist-form input {
+  flex: 1 1 260px;
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(137, 168, 255, 0.4);
+  background: rgba(2, 5, 18, 0.75);
+  color: #eff2ff;
+  padding: 0 1rem;
+}
+
+@media (max-width: 860px) {
+  .header {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .grid,
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+}

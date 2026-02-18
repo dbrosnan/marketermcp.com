@@ -1,0 +1,21 @@
+{
+  "name": "marketermcp.com",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public Marketer MCP hub with Budget Buddy and launch website.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "typecheck": "npm run -ws typecheck",
+    "dev:mcp": "npm --workspace apps/mcp-hub-worker run dev",
+    "deploy:mcp": "npm --workspace apps/mcp-hub-worker run deploy",
+    "dev:website": "npm --workspace apps/website run dev",
+    "deploy:website": "npm --workspace apps/website run deploy"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

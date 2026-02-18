@@ -1,0 +1,15 @@
+{
+  "name": "@marketermcp/website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo \"Static site - no build step\"",
+    "typecheck": "echo \"No typecheck for static site\"",
+    "dev": "wrangler pages dev public --port 8788",
+    "deploy": "wrangler pages deploy public --project-name marketermcp-site"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
+  }
+}

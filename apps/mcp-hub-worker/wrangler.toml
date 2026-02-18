@@ -1,0 +1,9 @@
+name = "marketermcp-hub"
+main = "src/index.ts"
+compatibility_date = "2026-02-18"
+compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+HUB_NAME = "Marketer MCP"
+HUB_ENVIRONMENT = "dev"
+ALLOW_UNAUTH_DISCOVERY = "true"

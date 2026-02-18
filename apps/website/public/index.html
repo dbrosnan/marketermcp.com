@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketer MCP | Connect once, access marketer-native tools</title>
+    <meta
+      name="description"
+      content="Marketer MCP is the public hub for marketer-specific AI tools. Budget Buddy is our first tool to plan and control channel spend."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+    <header class="container header">
+      <div class="brand">marketer<span>mcp</span></div>
+      <nav class="nav">
+        <a href="#tools">Tools</a>
+        <a href="#docs">Docs</a>
+        <a href="#security">Security</a>
+      </nav>
+      <a class="btn btn-small" href="#waitlist">Join beta</a>
+    </header>
+
+    <main class="container">
+      <section class="hero card">
+        <p class="kicker">Public MCP hub for marketing teams</p>
+        <h1>Connect once. Access marketer-native tools.</h1>
+        <p class="lead">
+          Build workflows on one endpoint and unlock specialized tools like Budget Buddy,
+          campaign planning assistants, and analytics copilots.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#waitlist">Get early access</a>
+          <a class="btn btn-ghost" href="#docs">Read quickstart</a>
+        </div>
+      </section>
+
+      <section id="tools" class="grid">
+        <article class="card tool-card">
+          <p class="badge">First live tool</p>
+          <h2>Budget Buddy</h2>
+          <p>
+            Monitor monthly spend, compare channel allocation, and instantly see over-budget risk.
+          </p>
+          <ul>
+            <li>Budget vs actual channel rollups</li>
+            <li>Over-budget alerts for campaigns</li>
+            <li>Simple JSON input/output for automations</li>
+          </ul>
+        </article>
+        <article class="card tool-card">
+          <p class="badge beta">Coming next</p>
+          <h2>More marketer tools</h2>
+          <p>Audience planning, creative QA, and attribution helpers are on the roadmap.</p>
+          <ul>
+            <li>Namespaced tool registry</li>
+            <li>Versioned contracts</li>
+            <li>Secure execution policies</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="docs" class="card docs">
+        <h2>Quickstart</h2>
+        <pre><code>GET /health
+GET /v1/tools
+POST /v1/tools/budget_buddy.plan_overview/execute</code></pre>
+        <p>
+          Use Bearer auth for execution routes. Discovery can be public or restricted by environment
+          policy.
+        </p>
+      </section>
+
+      <section id="security" class="card security">
+        <h2>Built for public access</h2>
+        <div class="security-grid">
+          <div>
+            <h3>Guardrails</h3>
+            <p>Token auth, route-level controls, payload limits, and namespaced tool execution.</p>
+          </div>
+          <div>
+            <h3>Observability</h3>
+            <p>Structured logs with request IDs, latency tracking, and incident-ready runbooks.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="waitlist" class="card waitlist">
+        <h2>Join the launch list</h2>
+        <p>Get early API access, launch updates, and first invites to new marketer tools.</p>
+        <form class="waitlist-form" action="#" method="post">
+          <input type="email" placeholder="you@company.com" aria-label="Email address" />
+          <button class="btn" type="submit">Request invite</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
