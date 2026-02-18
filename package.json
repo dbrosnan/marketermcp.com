@@ -8,8 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run -ws build",
-    "typecheck": "npm run -ws typecheck",
+    "build": "npm run --workspaces build",
+    "typecheck": "npm run --workspaces typecheck",
     "dev:mcp": "npm --workspace apps/mcp-hub-worker run dev",
     "deploy:mcp": "npm --workspace apps/mcp-hub-worker run deploy",
     "dev:website": "npm --workspace apps/website run dev",

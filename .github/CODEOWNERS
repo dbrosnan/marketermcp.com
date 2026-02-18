@@ -1,0 +1,18 @@
+# Default owner for everything
+* @dbrosnan
+
+# App-level ownership
+/apps/mcp-hub-worker/ @dbrosnan
+/apps/website/ @dbrosnan
+
+# Shared packages
+/packages/mcp-schemas/ @dbrosnan
+/packages/tools-budget-buddy/ @dbrosnan
+/packages/tool-registry/ @dbrosnan
+
+# Documentation
+/docs/ @dbrosnan
+
+# Infrastructure and CI
+/infra/ @dbrosnan
+/.github/ @dbrosnan

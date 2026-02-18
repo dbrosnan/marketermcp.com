@@ -10,7 +10,7 @@
     "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@marketermcp/mcp-schemas": "workspace:*"
+    "@marketermcp/mcp-schemas": "0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.9.2"

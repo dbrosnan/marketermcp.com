@@ -10,8 +10,8 @@
     "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@marketermcp/mcp-schemas": "workspace:*",
-    "@marketermcp/tools-budget-buddy": "workspace:*"
+    "@marketermcp/mcp-schemas": "0.1.0",
+    "@marketermcp/tools-budget-buddy": "0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.9.2"

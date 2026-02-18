@@ -1,0 +1,37 @@
+scope:hub:
+  - changed-files:
+      - any-glob-to-any-file: "apps/mcp-hub-worker/**"
+
+scope:website:
+  - changed-files:
+      - any-glob-to-any-file: "apps/website/**"
+
+scope:budget:
+  - changed-files:
+      - any-glob-to-any-file: "packages/tools-budget-buddy/**"
+
+scope:schemas:
+  - changed-files:
+      - any-glob-to-any-file: "packages/mcp-schemas/**"
+
+scope:registry:
+  - changed-files:
+      - any-glob-to-any-file: "packages/tool-registry/**"
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file: "docs/**"
+      - any-glob-to-any-file: "**/*.md"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: ".github/**"
+
+infra:
+  - changed-files:
+      - any-glob-to-any-file: "infra/**"
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file: "**/package.json"
+      - any-glob-to-any-file: "package-lock.json"
