@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTM governance: stop attribution leaks before they start | Marketer MCP Blog</title>
+    <meta
+      name="description"
+      content="Broken UTM parameters silently destroy marketing attribution. Learn governance practices and how automated QA catches mismatches before campaigns go live."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+    <header class="container header">
+      <a href="/" class="brand" style="text-decoration:none">marketer<span>mcp</span></a>
+      <nav class="nav">
+        <a href="/#tools">Tools</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#security">Security</a>
+      </nav>
+      <a class="btn btn-small" href="/#waitlist">Join beta</a>
+    </header>
+
+    <main class="container">
+      <section class="card page-content">
+        <p><a href="/blog/">&larr; All posts</a></p>
+        <h1>UTM governance: stop attribution leaks before they start</h1>
+        <p class="post-meta">February 2026</p>
+        <div class="post-body">
+          <p>Every marketer knows UTM parameters matter. Yet in practice, UTM governance is the most neglected part of campaign operations. One misspelled source, one inconsistent medium, and your attribution data fractures — silently.</p>
+
+          <h2>The cost of broken UTMs</h2>
+
+          <p>When UTMs are inconsistent, your analytics tools split what should be one channel into many. "facebook" and "Facebook" and "fb" become three separate sources. You lose the ability to answer basic questions: "How much pipeline did paid social drive this quarter?"</p>
+
+          <p>The downstream impact is worse. Budget allocation decisions made on fractured data lead to over-investing in channels that look like they are under-performing (because their attribution is split) and under-investing in channels that are actually working.</p>
+
+          <h2>A governance framework</h2>
+
+          <ul>
+            <li><strong>Standard taxonomy</strong>: Define allowed values for source, medium, campaign, content, and term. Publish it in a shared doc that every team member and agency partner references.</li>
+            <li><strong>Naming conventions</strong>: Use lowercase, hyphens instead of spaces, and consistent prefixes (e.g., <code>paid-search_brand</code>, <code>paid-social_prospecting</code>).</li>
+            <li><strong>Pre-launch validation</strong>: Before any campaign goes live, check that every URL's UTMs match the taxonomy. This is where automation makes the biggest difference.</li>
+            <li><strong>Ongoing audits</strong>: Monthly, run a report of all UTM values hitting your analytics and flag anything not in the taxonomy.</li>
+          </ul>
+
+          <h2>Automating governance with Attribution QA</h2>
+
+          <p>Marketer MCP's upcoming Attribution QA tool will take your UTM taxonomy and a list of campaign URLs, then return mismatches, duplicates, and missing parameters. Run it as a pre-launch check in your AI workflow and catch problems before they reach production.</p>
+
+          <p><a href="/#waitlist">Join the launch list</a> to get notified when Attribution QA ships.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/security.html">Security</a>
+      </footer>
+    </main>
+  </body>
+</html>

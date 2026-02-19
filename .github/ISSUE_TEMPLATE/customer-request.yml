@@ -1,0 +1,64 @@
+name: Customer Request
+description: Track an enterprise API or SLA request from a customer or prospect.
+labels: ["customer-request", "tier/enterprise"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to capture requests from enterprise customers or prospects for API access, SLA agreements, or custom integrations.
+
+  - type: input
+    id: company
+    attributes:
+      label: Company name
+      description: Name of the requesting organization.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      options:
+        - Enterprise API access
+        - SLA agreement
+        - Custom integration
+        - Security review
+        - Volume pricing
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Request details
+      description: What is the customer asking for? Include expected volume, timeline, and any constraints.
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Primary contact
+      description: Who is the point of contact?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      options:
+        - Blocking a deal
+        - High (this quarter)
+        - Medium (next quarter)
+        - Low (exploring)
+    validations:
+      required: true
+
+  - type: textarea
+    id: internal_notes
+    attributes:
+      label: Internal notes
+      description: Any context for the team (deal size, strategic importance, dependencies).

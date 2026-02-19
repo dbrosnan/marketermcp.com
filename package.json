@@ -10,10 +10,30 @@
   "scripts": {
     "build": "npm run --workspaces build",
     "typecheck": "npm run --workspaces typecheck",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:e2e": "playwright test",
+    "test:smoke": "playwright test --project=smoke",
+    "test:lighthouse": "lhci autorun",
     "dev:mcp": "npm --workspace apps/mcp-hub-worker run dev",
     "deploy:mcp": "npm --workspace apps/mcp-hub-worker run deploy",
     "dev:website": "npm --workspace apps/website run dev",
-    "deploy:website": "npm --workspace apps/website run deploy"
+    "deploy:website": "npm --workspace apps/website run deploy",
+    "docs:wikijs:up": "docker compose -f infra/wikijs/docker-compose.yml --env-file infra/wikijs/.env up -d",
+    "docs:wikijs:down": "docker compose -f infra/wikijs/docker-compose.yml --env-file infra/wikijs/.env down",
+    "docs:wikijs:ps": "docker compose -f infra/wikijs/docker-compose.yml --env-file infra/wikijs/.env ps",
+    "docs:wikijs:logs": "docker compose -f infra/wikijs/docker-compose.yml --env-file infra/wikijs/.env logs --tail=120"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@eslint/js": "^9.0.0",
+    "@lhci/cli": "^0.14.0",
+    "@playwright/test": "^1.49.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "typescript-eslint": "^8.0.0",
+    "wait-on": "^8.0.0"
   },
   "engines": {
     "node": ">=20.0.0"

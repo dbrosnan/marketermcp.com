@@ -1,0 +1,65 @@
+name: Pricing Decision
+description: Propose or document a commercial or pricing decision.
+labels: ["pricing", "decision"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when a pricing, packaging, or commercial model change needs discussion and sign-off.
+
+  - type: input
+    id: title
+    attributes:
+      label: Decision title
+      description: Short name for this pricing decision.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this decision needed? What data or feedback prompted it?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What change are you proposing?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tiers_affected
+    attributes:
+      label: Tiers affected
+      multiple: true
+      options:
+        - Starter (Free)
+        - Growth (Paid API)
+        - Enterprise (API + SLA)
+        - All tiers
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other options were evaluated?
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: Revenue, adoption, churn, or operational impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback plan
+      description: How do we revert if this doesn't work?

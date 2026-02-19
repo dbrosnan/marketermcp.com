@@ -147,6 +147,50 @@ Most common issue: the autobuild step could not find buildable code. Since this 
 
 ---
 
+## 7. Create Cloudflare Pages Project for the Website
+
+**Why this matters:** The website deploy script runs `wrangler pages deploy public --project-name marketermcp-site`. That project needs to exist in your Cloudflare account first.
+
+**Time: ~2 minutes**
+
+### Steps
+
+1. Go to <https://dash.cloudflare.com> and navigate to **Workers & Pages**
+2. Click **Create** > **Pages** > **Direct Upload**
+3. Name the project: `marketermcp-site`
+4. Upload any placeholder file to finish creation (the CI pipeline will handle real deploys)
+5. Alternatively, run this from the `apps/website/` directory:
+
+```bash
+npx wrangler pages project create marketermcp-site --production-branch main
+```
+
+---
+
+## 8. Configure DNS Records
+
+**Why this matters:** The deploy workflows and wrangler config reference `marketermcp.com`, `staging.marketermcp.com`, and `api.marketermcp.com`. DNS must point to the right Cloudflare services.
+
+**Time: ~5 minutes**
+
+### Steps
+
+1. Go to <https://dash.cloudflare.com> and select the `marketermcp.com` zone
+2. Navigate to **DNS** > **Records**
+3. Add these records:
+   - `marketermcp.com` — will be handled automatically by Cloudflare Pages custom domain setup
+   - `api.marketermcp.com` — CNAME to your Worker's `*.workers.dev` subdomain (or use a Custom Domain on the Worker)
+   - `staging.marketermcp.com` — CNAME pointing to the staging Pages deployment
+
+### Cloudflare Worker custom domain (easier alternative for the API)
+
+1. Go to **Workers & Pages** > `marketermcp-hub` (after first deploy)
+2. Click **Settings** > **Triggers** > **Custom Domains**
+3. Add `api.marketermcp.com`
+4. Cloudflare handles the DNS automatically
+
+---
+
 ## Quick Reference Checklist
 
 Copy this somewhere you will actually see it (sticky note, Notion, whatever works for your brain):
@@ -159,6 +203,8 @@ Copy this somewhere you will actually see it (sticky note, Notion, whatever work
 [ ] Git identity configured
 [ ] Dependabot confirmed active
 [ ] CodeQL first run triggered and passed
+[ ] Cloudflare Pages project "marketermcp-site" created
+[ ] DNS records configured for marketermcp.com, api., and staging.
 ```
 
 When all boxes are checked, delete this checklist. The repo is fully operational.

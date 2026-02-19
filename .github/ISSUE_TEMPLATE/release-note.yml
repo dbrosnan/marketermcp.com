@@ -1,0 +1,64 @@
+name: Release Note
+description: Document what ships in this release for changelog and external comms.
+labels: ["docs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to draft release notes tied to a release PR or milestone.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The semantic version for this release.
+      placeholder: "0.2.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: added
+    attributes:
+      label: Added
+      description: New features or capabilities.
+      placeholder: |
+        - New tool: Attribution QA
+        - Enterprise intake form on website
+
+  - type: textarea
+    id: changed
+    attributes:
+      label: Changed
+      description: Updates to existing behavior.
+      placeholder: |
+        - Increased free tier rate limit from 10 to 15 req/min
+
+  - type: textarea
+    id: fixed
+    attributes:
+      label: Fixed
+      description: Bug fixes.
+      placeholder: |
+        - Fixed Budget Buddy rounding error on small budgets
+
+  - type: textarea
+    id: pricing_changes
+    attributes:
+      label: Pricing or commercial changes
+      description: Any tier, limit, or policy changes in this release.
+      placeholder: |
+        - None
+
+  - type: textarea
+    id: breaking
+    attributes:
+      label: Breaking changes
+      description: Changes that break backward compatibility.
+      placeholder: |
+        - None
+
+  - type: textarea
+    id: comms_notes
+    attributes:
+      label: Communications notes
+      description: Key points for blog, email, or social announcements.

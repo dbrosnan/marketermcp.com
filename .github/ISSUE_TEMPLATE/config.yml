@@ -6,3 +6,6 @@ contact_links:
   - name: General questions
     url: https://github.com/dbrosnan/marketermcp.com/discussions
     about: Use Discussions for questions, ideas, and general conversation.
+  - name: Enterprise API access
+    url: https://marketermcp.com/#waitlist
+    about: Request enterprise API access, SLA agreements, or custom integrations.

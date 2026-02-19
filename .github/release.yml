@@ -11,6 +11,14 @@ changelog:
       labels:
         - "fix"
         - "bug"
+    - title: "Pricing and Commercial"
+      labels:
+        - "pricing"
+        - "decision"
+    - title: "Enterprise"
+      labels:
+        - "customer-request"
+        - "tier/enterprise"
     - title: "Documentation"
       labels:
         - "docs"

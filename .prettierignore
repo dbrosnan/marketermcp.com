@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.lighthouseci/
+playwright-report/
+infra/wikijs/data/
+package-lock.json

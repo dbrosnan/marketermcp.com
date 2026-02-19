@@ -3,20 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms | Marketer MCP</title>
+    <title>Terms of Use | Marketer MCP</title>
+    <meta
+      name="description"
+      content="Marketer MCP terms of use — acceptable use, rate limits, and service conditions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+    <header class="container header">
+      <a href="/" class="brand" style="text-decoration:none">marketer<span>mcp</span></a>
+      <nav class="nav">
+        <a href="/#tools">Tools</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#security">Security</a>
+      </nav>
+      <a class="btn btn-small" href="/#waitlist">Join beta</a>
+    </header>
+
     <main class="container">
-      <section class="card hero">
+      <section class="card page-content">
         <h1>Terms of Use</h1>
-        <p>Use of Marketer MCP is subject to acceptable use and rate-limit policies.</p>
-        <p>
-          Before public launch, this page should be replaced with legal-reviewed terms and
-          limitations.
-        </p>
-        <p><a class="btn btn-ghost" href="/">Back to home</a></p>
+        <p class="post-meta">Effective: February 2026</p>
+
+        <div class="legal-section">
+          <h3>Service description</h3>
+          <p>Marketer MCP provides a public API hub of marketing operations tools accessible through the Model Context Protocol (MCP) standard. By using the service, you agree to these terms.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Acceptable use</h3>
+          <ul>
+            <li>Use the service only for lawful marketing operations purposes.</li>
+            <li>Do not attempt to circumvent authentication, rate limits, or access controls.</li>
+            <li>Do not use the service to process, store, or transmit data that violates applicable laws or third-party rights.</li>
+            <li>Do not reverse-engineer, decompile, or attempt to extract the source code of the service.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>Rate limits</h3>
+          <p>API requests are subject to rate limits that vary by plan. Exceeding rate limits will result in temporary throttling (HTTP 429 responses). Persistent abuse may result in account suspension.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Beta terms</h3>
+          <p>During the beta period, the service is provided "as is" without uptime guarantees. We may modify features, endpoints, or tool contracts with reasonable notice. Beta access may be revoked at any time.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Intellectual property</h3>
+          <p>You retain ownership of all data you submit to Marketer MCP tools. We retain ownership of the service, its tools, documentation, and brand assets. Tool outputs are derived from your inputs and are yours to use.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Limitation of liability</h3>
+          <p>Marketer MCP is not liable for decisions made based on tool outputs. Budget pacing, allocation suggestions, and QA results are informational and should be reviewed by qualified personnel before acting on them.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Termination</h3>
+          <p>Either party may terminate access at any time. Upon termination, your API tokens are revoked and account data is deleted within 30 days.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Changes to these terms</h3>
+          <p>We will notify registered users by email at least 14 days before material changes take effect.</p>
+        </div>
+
+        <p style="margin-top: 32px"><a class="btn btn-ghost" href="/">Back to home</a></p>
       </section>
+
+      <footer class="footer">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/security.html">Security</a>
+      </footer>
     </main>
   </body>
 </html>

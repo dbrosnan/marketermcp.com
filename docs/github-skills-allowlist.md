@@ -27,6 +27,13 @@ Use this checklist before adopting any external skill into production workflows.
 - Accessibility reviewer
 - API schema and contract checker
 - Release notes/changelog helper
+- E2E and smoke testing
+- Performance and Lighthouse auditing
+- SAST and dependency scanning
+- Secrets scanning
+- Design token management
+- Observability and error tracking
+- Content management (CMS)
 
 ## Ownership
 

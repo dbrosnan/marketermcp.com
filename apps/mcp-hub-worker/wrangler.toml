@@ -7,3 +7,14 @@ compatibility_flags = [ "nodejs_compat" ]
 HUB_NAME = "Marketer MCP"
 HUB_ENVIRONMENT = "dev"
 ALLOW_UNAUTH_DISCOVERY = "true"
+
+[env.staging]
+name = "marketermcp-hub-staging"
+vars = { HUB_NAME = "Marketer MCP", HUB_ENVIRONMENT = "staging", ALLOW_UNAUTH_DISCOVERY = "true" }
+
+[env.production]
+name = "marketermcp-hub"
+vars = { HUB_NAME = "Marketer MCP", HUB_ENVIRONMENT = "production", ALLOW_UNAUTH_DISCOVERY = "true" }
+routes = [
+  { pattern = "api.marketermcp.com/*", zone_name = "marketermcp.com" }
+]

@@ -16,3 +16,20 @@
 # Infrastructure and CI
 /infra/ @dbrosnan
 /.github/ @dbrosnan
+
+# --- Protected paths (require explicit owner approval) ---
+
+# Pricing and commercial policy
+/docs/pricing.md @dbrosnan
+/docs/policies/ @dbrosnan
+
+# Public API surface
+/apps/mcp-hub-worker/src/ @dbrosnan
+/packages/mcp-schemas/src/ @dbrosnan
+
+# Security
+/docs/security.md @dbrosnan
+/SECURITY.md @dbrosnan
+
+# API tier enforcement
+/docs/api/ @dbrosnan

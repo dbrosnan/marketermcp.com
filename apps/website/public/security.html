@@ -4,21 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Security | Marketer MCP</title>
+    <meta
+      name="description"
+      content="Marketer MCP security practices — authentication, data handling, infrastructure, and responsible disclosure."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+    <header class="container header">
+      <a href="/" class="brand" style="text-decoration:none">marketer<span>mcp</span></a>
+      <nav class="nav">
+        <a href="/#tools">Tools</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#security">Security</a>
+      </nav>
+      <a class="btn btn-small" href="/#waitlist">Join beta</a>
+    </header>
+
     <main class="container">
-      <section class="card hero">
+      <section class="card page-content">
         <h1>Security</h1>
-        <p>
-          The public hub uses authentication, schema validation, and Cloudflare protection layers.
-        </p>
-        <p>
-          Before launch, publish your disclosure process, incident response contacts, and uptime
-          policy here.
-        </p>
-        <p><a class="btn btn-ghost" href="/">Back to home</a></p>
+        <p class="post-meta">Last updated: February 2026</p>
+
+        <div class="legal-section">
+          <h3>Authentication</h3>
+          <p>All tool execution endpoints require Bearer token authentication. Tokens are generated per account and can be rotated at any time. Discovery endpoints can be configured as public or restricted by environment policy.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Data handling</h3>
+          <ul>
+            <li>Tool inputs (budget data, spend figures, campaign metadata) are processed in memory and not persisted after the response is returned.</li>
+            <li>No tool input data is used for model training or shared with third parties.</li>
+            <li>All traffic is encrypted in transit via TLS 1.3.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>Infrastructure</h3>
+          <ul>
+            <li>Hosted on Cloudflare Workers with edge-level DDoS protection.</li>
+            <li>Request payloads are validated against schemas before tool execution.</li>
+            <li>Rate limits are enforced per token to prevent abuse.</li>
+            <li>Namespaced tool execution prevents cross-tenant data access.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>Observability</h3>
+          <ul>
+            <li>Structured logs with unique request IDs for every API call.</li>
+            <li>Latency tracking and error rate monitoring with alerting.</li>
+            <li>Incident-ready runbooks with defined response timelines.</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>Responsible disclosure</h3>
+          <p>If you discover a security vulnerability, please report it to security@marketermcp.com. We acknowledge reports within 48 hours and aim to resolve confirmed vulnerabilities within 14 days. We do not pursue legal action against good-faith security researchers.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Incident response</h3>
+          <p>In the event of a security incident affecting user data, we will notify affected users within 72 hours with a description of the incident, the data involved, and remediation steps taken.</p>
+        </div>
+
+        <p style="margin-top: 32px"><a class="btn btn-ghost" href="/">Back to home</a></p>
       </section>
+
+      <footer class="footer">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/security.html">Security</a>
+      </footer>
     </main>
   </body>
 </html>

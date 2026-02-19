@@ -1,0 +1,108 @@
+# Label taxonomy for Marketer MCP
+# Apply with: gh label create "name" --color "hex" --description "desc"
+# Or use github-label-sync or similar tooling.
+
+# --- Area ---
+- name: area/product
+  color: "0052CC"
+  description: Product code, tools, schemas, hub
+- name: area/infra
+  color: "5319E7"
+  description: Infrastructure, CI/CD, deployment
+- name: area/docs
+  color: "0075CA"
+  description: Documentation changes
+- name: area/growth
+  color: "E4E669"
+  description: Marketing, GTM, growth ops
+
+# --- Tier impact ---
+- name: tier/free
+  color: "B4F8C8"
+  description: Affects Starter (free) tier
+- name: tier/growth
+  color: "A2D2FF"
+  description: Affects Growth (paid API) tier
+- name: tier/enterprise
+  color: "FFD6A5"
+  description: Affects Enterprise (API + SLA) tier
+
+# --- Priority ---
+- name: priority/p0
+  color: "D73A4A"
+  description: Critical — blocks launch or causes outage
+- name: priority/p1
+  color: "E99695"
+  description: High — needed this sprint
+- name: priority/p2
+  color: "FBF2C4"
+  description: Medium — important but not urgent
+- name: priority/p3
+  color: "D4C5F9"
+  description: Low — nice to have
+
+# --- Launch ---
+- name: launch/blocker
+  color: "B60205"
+  description: Blocks public launch — must be resolved first
+
+# --- Type ---
+- name: epic
+  color: "3E4B9E"
+  description: Multi-issue initiative
+- name: task
+  color: "7057FF"
+  description: Single scoped deliverable
+- name: pricing
+  color: "FBCA04"
+  description: Pricing or commercial model change
+- name: decision
+  color: "C2E0C6"
+  description: Decision record requiring sign-off
+- name: customer-request
+  color: "F9D0C4"
+  description: Enterprise customer or prospect request
+
+# --- Existing (keep) ---
+- name: bug
+  color: "D73A4A"
+  description: Something isn't working
+- name: enhancement
+  color: "A2EEEF"
+  description: New feature or request
+- name: feat
+  color: "A2EEEF"
+  description: New feature
+- name: fix
+  color: "D73A4A"
+  description: Bug fix
+- name: docs
+  color: "0075CA"
+  description: Documentation
+- name: documentation
+  color: "0075CA"
+  description: Documentation
+- name: ci
+  color: "5319E7"
+  description: CI/CD changes
+- name: infra
+  color: "5319E7"
+  description: Infrastructure
+- name: chore
+  color: "EDEDED"
+  description: Maintenance
+- name: dependencies
+  color: "0366D6"
+  description: Dependency updates
+- name: breaking
+  color: "B60205"
+  description: Breaking change
+- name: skip-changelog
+  color: "EDEDED"
+  description: Exclude from release notes
+- name: security
+  color: "D93F0B"
+  description: Security-related change
+- name: public-api
+  color: "1D76DB"
+  description: Affects public API surface

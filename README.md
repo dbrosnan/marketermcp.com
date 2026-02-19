@@ -9,6 +9,10 @@ Monorepo for the public Marketer MCP hub ([marketermcp.com](https://marketermcp.
 
 ```
 marketermcp.com/
+├── .cursor/
+│   └── skills            # Local project skills (copy, design, a11y, MCP security)
+├── .github/
+│   └── workflows         # CI workflow definitions
 ├── apps/
 │   ├── mcp-hub-worker   # Public MCP hub API — Cloudflare Workers
 │   └── website           # Launch website — static assets + Worker
@@ -62,6 +66,19 @@ Deployments target Cloudflare Workers. In CI, workflows gate on passing checks b
 npm run deploy:mcp
 npm run deploy:website
 ```
+
+## Documentation platform
+
+The docs system follows a two-phase path:
+
+- **Phase 1 (current):** Git-native docs in `docs/` with ADRs, runbooks, and review discipline.
+- **Phase 2 (expansion):** self-hosted FLOSS collaborative wiki using Wiki.js in `infra/wikijs/`.
+
+Read:
+
+- `docs/README.md`
+- `docs/documentation-strategy.md`
+- `docs/migrations/git-to-wikijs.md`
 
 ## Contributing
 
