@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" fill="none">
+  <!-- Tool boxes -->
+  <rect x="30" y="80" width="50" height="40" rx="8" fill="#EDE8F5" opacity="0.8"/>
+  <rect x="35" y="85" width="12" height="12" rx="3" fill="#7C5CFC" opacity="0.6"/>
+  <rect x="200" y="60" width="50" height="40" rx="8" fill="#EDE8F5" opacity="0.8"/>
+  <rect x="205" y="65" width="12" height="12" rx="3" fill="#6AC8C6" opacity="0.6"/>
+  <rect x="200" y="140" width="50" height="40" rx="8" fill="#EDE8F5" opacity="0.8"/>
+  <rect x="205" y="145" width="12" height="12" rx="3" fill="#6AC8C6" opacity="0.6"/>
+  <rect x="30" y="140" width="50" height="40" rx="8" fill="#EDE8F5" opacity="0.8"/>
+  <rect x="35" y="145" width="12" height="12" rx="3" fill="#7C5CFC" opacity="0.6"/>
+  <!-- Dotted connector lines -->
+  <path d="M80 100 L130 120" stroke="#6B7280" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M200 80 L160 120" stroke="#6B7280" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M200 160 L160 140" stroke="#6B7280" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M80 160 L130 140" stroke="#6B7280" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <!-- Body (center, connecting point) -->
+  <rect x="110" y="105" width="50" height="55" rx="8" fill="#8FBC8F"/>
+  <!-- Head -->
+  <circle cx="135" cy="85" r="18" fill="#EDE8F5"/>
+</svg>

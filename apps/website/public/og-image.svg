@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FAFAFC"/>
+      <stop offset="50%" stop-color="#EDE8F5"/>
+      <stop offset="100%" stop-color="#F5F3EF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="600" cy="280" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C5CFC" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#7C5CFC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <!-- Logo mark -->
+  <circle cx="560" cy="230" r="28" fill="#7C5CFC"/>
+  <circle cx="528" cy="192" r="14" fill="#6AC8C6"/>
+  <circle cx="598" cy="196" r="14" fill="#6AC8C6"/>
+  <circle cx="594" cy="268" r="14" fill="#6AC8C6"/>
+  <line x1="544" y1="218" x2="536" y2="202" stroke="#7C5CFC" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="578" y1="216" x2="590" y2="204" stroke="#7C5CFC" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="574" y1="250" x2="586" y2="262" stroke="#7C5CFC" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="560" cy="230" r="12" fill="white" opacity="0.25"/>
+  <!-- Wordmark -->
+  <text x="620" y="244" font-family="system-ui,sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5">
+    <tspan fill="#1A1A2E">marketer</tspan><tspan fill="#7C5CFC">mcp</tspan>
+  </text>
+  <!-- Tagline -->
+  <text x="600" y="340" font-family="system-ui,sans-serif" font-size="28" fill="#3D3D5C" text-anchor="middle" font-weight="500">
+    Connect once. Access marketer-native tools.
+  </text>
+  <!-- Subtitle -->
+  <text x="600" y="385" font-family="system-ui,sans-serif" font-size="18" fill="#6B7280" text-anchor="middle">
+    The public MCP hub for marketing teams
+  </text>
+</svg>

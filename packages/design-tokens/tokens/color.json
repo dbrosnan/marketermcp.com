@@ -1,0 +1,38 @@
+{
+  "color": {
+    "bg": {
+      "primary": { "value": "#FAFAFC", "type": "color", "comment": "Main page background — warm off-white" },
+      "secondary": { "value": "#F5F3EF", "type": "color", "comment": "Alternate background — soft cream" },
+      "surface": { "value": "#EDE8F5", "type": "color", "comment": "Card and panel surface — lavender-white" },
+      "surfaceHover": { "value": "#E3DCF0", "type": "color", "comment": "Surface hover state" },
+      "inverse": { "value": "#1A1A2E", "type": "color", "comment": "Dark background for inverse sections" }
+    },
+    "accent": {
+      "primary": { "value": "#7C5CFC", "type": "color", "comment": "Primary brand purple" },
+      "primaryHover": { "value": "#6B4EE6", "type": "color", "comment": "Primary hover state" },
+      "secondary": { "value": "#6AC8C6", "type": "color", "comment": "Teal accent" },
+      "secondaryHover": { "value": "#4ECDC4", "type": "color", "comment": "Teal hover state" },
+      "tertiary": { "value": "#8FBC8F", "type": "color", "comment": "Warm sage for supporting elements" }
+    },
+    "text": {
+      "primary": { "value": "#1A1A2E", "type": "color", "comment": "Headings and body text — deep navy" },
+      "secondary": { "value": "#3D3D5C", "type": "color", "comment": "Supporting text" },
+      "muted": { "value": "#6B7280", "type": "color", "comment": "Captions, meta text — soft slate" },
+      "inverse": { "value": "#FAFAFC", "type": "color", "comment": "Text on dark backgrounds" },
+      "link": { "value": "#7C5CFC", "type": "color", "comment": "Link color — matches primary accent" }
+    },
+    "border": {
+      "default": { "value": "rgba(124, 92, 252, 0.15)", "type": "color", "comment": "Subtle lavender border" },
+      "strong": { "value": "rgba(124, 92, 252, 0.30)", "type": "color", "comment": "Emphasized border" },
+      "muted": { "value": "rgba(107, 114, 128, 0.15)", "type": "color", "comment": "Neutral border" }
+    },
+    "feedback": {
+      "success": { "value": "#34D399", "type": "color", "comment": "Success states and positive CTAs" },
+      "successBg": { "value": "rgba(52, 211, 153, 0.1)", "type": "color" },
+      "warning": { "value": "#FBBF24", "type": "color" },
+      "warningBg": { "value": "rgba(251, 191, 36, 0.1)", "type": "color" },
+      "error": { "value": "#F87171", "type": "color" },
+      "errorBg": { "value": "rgba(248, 113, 113, 0.1)", "type": "color" }
+    }
+  }
+}

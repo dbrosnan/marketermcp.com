@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <!-- Connecting lines (triangle formation) -->
+  <line x1="200" y1="100" x2="120" y2="180" stroke="#EDE8F5" stroke-width="2"/>
+  <line x1="200" y1="100" x2="280" y2="180" stroke="#EDE8F5" stroke-width="2"/>
+  <line x1="120" y1="180" x2="280" y2="180" stroke="#EDE8F5" stroke-width="2"/>
+  <line x1="200" y1="100" x2="200" y2="140" stroke="#7C5CFC" stroke-width="1.5" opacity="0.6"/>
+  <line x1="200" y1="140" x2="120" y2="180" stroke="#6AC8C6" stroke-width="1.5" opacity="0.5"/>
+  <line x1="200" y1="140" x2="280" y2="180" stroke="#8FBC8F" stroke-width="1.5" opacity="0.5"/>
+  <!-- Central star/burst -->
+  <circle cx="200" cy="140" r="20" fill="#7C5CFC" opacity="0.2"/>
+  <path d="M 200 125 L 203 135 L 213 135 L 205 142 L 208 152 L 200 146 L 192 152 L 195 142 L 187 135 L 197 135 Z" fill="#7C5CFC" opacity="0.9"/>
+  <!-- Person 1 (left) - head + body -->
+  <circle cx="120" cy="155" r="18" fill="#7C5CFC" opacity="0.85"/>
+  <path d="M 100 195 L 140 195 L 135 240 L 105 240 Z" fill="#7C5CFC" opacity="0.7"/>
+  <!-- Person 2 (right) -->
+  <circle cx="280" cy="155" r="18" fill="#6AC8C6" opacity="0.85"/>
+  <path d="M 260 195 L 300 195 L 295 240 L 265 240 Z" fill="#6AC8C6" opacity="0.7"/>
+  <!-- Person 3 (bottom center) -->
+  <circle cx="200" cy="210" r="18" fill="#8FBC8F" opacity="0.85"/>
+  <path d="M 180 235 L 220 235 L 215 270 L 185 270 Z" fill="#8FBC8F" opacity="0.7"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Circle background -->
+  <circle cx="40" cy="40" r="32" fill="#8FBC8F"/>
+  <!-- Play button -->
+  <path d="M32 28 L32 52 L52 40 Z" fill="white"/>
+</svg>

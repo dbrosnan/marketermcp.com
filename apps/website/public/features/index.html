@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features & Tools | Marketer MCP</title>
+    <meta
+      name="description"
+      content="Explore Marketer MCP's purpose-built marketing tools. Budget Buddy, Audience Planner, Creative QA, and more — one hub, one endpoint."
+    />
+    <link rel="canonical" href="https://marketermcp.com/features/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marketermcp.com/features/" />
+    <meta property="og:title" content="Features & Tools | Marketer MCP" />
+    <meta
+      property="og:description"
+      content="One hub. Purpose-built marketing tools. Budget Buddy, Audience Planner, Creative QA — connect once, execute anywhere."
+    />
+    <meta property="og:image" content="https://marketermcp.com/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Features & Tools | Marketer MCP" />
+    <meta
+      name="twitter:description"
+      content="One hub. Purpose-built marketing tools. Budget Buddy, Audience Planner, Creative QA — connect once, execute anywhere."
+    />
+    <meta name="twitter:image" content="https://marketermcp.com/og-image.svg" />
+    <meta name="theme-color" content="#FAFAFC" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+
+    <header class="container header">
+      <a href="/" class="brand">marketer<span>mcp</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/features/">Features</a>
+        <a href="/use-cases/">Use Cases</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/docs/">Docs</a>
+      </nav>
+      <a class="btn btn-small" href="/beta/">Join Beta</a>
+    </header>
+
+    <main class="container">
+      <!-- 1. Hero -->
+      <section class="hero card">
+        <div class="hero-split">
+          <div class="hero-text">
+            <p class="kicker">Tools built for marketers</p>
+            <h1>One hub. Purpose-built marketing tools.</h1>
+            <p class="lead">
+              Marketer MCP is a tool registry — one endpoint where your AI assistants discover and
+              execute marketing-specific tools. Connect once, get structured inputs and outputs, and
+              run budget pacing, audience planning, creative QA, and more without stitching together
+              multiple APIs.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-lg" href="/beta/">Get early access</a>
+              <a class="btn btn-ghost btn-lg" href="#budget-buddy">See Budget Buddy</a>
+            </div>
+          </div>
+          <div class="hero-illustration">
+            <img src="/img/hero-tools.svg" alt="Marketing tools toolkit" width="380" height="285">
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Budget Buddy deep dive -->
+      <section id="budget-buddy" class="section-gap">
+        <article class="card feature-section">
+          <div class="section-illustration">
+            <img src="/img/budget-dashboard.svg" alt="Budget Buddy dashboard" width="320" height="224">
+          </div>
+          <p class="badge new">First live tool</p>
+          <h2>Budget Buddy</h2>
+          <p class="lead">
+            Budget Buddy is our first live tool — a marketer-native assistant for budget planning,
+            spend tracking, and channel allocation. Send your budget data and campaign spend; get
+            rollups, alerts, and pacing insights in structured JSON.
+          </p>
+          <ul>
+            <li><strong>Budget vs actual rollups</strong> — Channel-level and campaign-level summaries</li>
+            <li><strong>Over-budget alerts</strong> — Instant visibility when spend exceeds plan</li>
+            <li><strong>Channel allocation analysis</strong> — Compare planned vs actual mix</li>
+            <li><strong>JSON input/output</strong> — Easy to automate and integrate</li>
+            <li><strong>Real-time pacing</strong> — See where you stand against monthly targets</li>
+          </ul>
+          <h3>API usage</h3>
+          <pre><code>POST /v1/tools/budget_buddy.plan_overview/execute</code></pre>
+          <p>
+            Use Bearer auth. Send budget and spend data in the request body; receive structured
+            rollups and alerts in the response.
+          </p>
+          <div class="cta-row" style="margin-top: 24px;">
+            <a class="btn btn-lg" href="/beta/">Try Budget Buddy in the beta</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- 3. How MCP works -->
+      <section id="how-it-works" class="section-gap">
+        <h2 class="text-center">How MCP works</h2>
+        <p class="text-center" style="max-width: 560px; margin: 12px auto 0;">
+          Marketer MCP uses the MCP protocol with a single endpoint. Your AI assistant connects
+          once, discovers available tools, and executes them with namespaced routes.
+        </p>
+        <div class="grid grid-3" style="margin-top: 32px;">
+          <div class="card feature-section">
+            <img src="/img/workflow-connect.svg" alt="" class="icon-img" width="48" height="48">
+            <h3>Connect</h3>
+            <p>Point your AI assistant to the Marketer MCP endpoint. Authenticate with Bearer token.</p>
+          </div>
+          <div class="card feature-section">
+            <img src="/img/workflow-discover.svg" alt="" class="icon-img" width="48" height="48">
+            <h3>Discover tools</h3>
+            <p>Query the tool registry to list available tools, schemas, and parameters.</p>
+          </div>
+          <div class="card feature-section">
+            <img src="/img/workflow-execute.svg" alt="" class="icon-img" width="48" height="48">
+            <h3>Execute</h3>
+            <p>Call tools by name. Send structured input, receive structured output — no custom integrations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Upcoming tools grid -->
+      <section id="upcoming" class="section-gap">
+        <h2 class="text-center">Upcoming tools</h2>
+        <p class="text-center" style="max-width: 560px; margin: 12px auto 0;">
+          More marketer-native tools are on the roadmap. Join the beta to get early access.
+        </p>
+        <div class="grid grid-3" style="margin-top: 32px;">
+          <article class="card tool-card muted-card">
+            <img src="/img/icon-users.svg" alt="" class="icon-img" width="48" height="48">
+            <p class="badge beta">Coming soon</p>
+            <h3>Audience Planner</h3>
+            <p>Segment modeling and audience sizing for campaign planning. Size audiences before you spend.</p>
+          </article>
+          <article class="card tool-card muted-card">
+            <img src="/img/icon-star.svg" alt="" class="icon-img" width="48" height="48">
+            <p class="badge beta">Coming soon</p>
+            <h3>Creative QA</h3>
+            <p>Brand compliance and creative review helpers. Check assets against guidelines before launch.</p>
+          </article>
+          <article class="card tool-card muted-card">
+            <img src="/img/icon-chart.svg" alt="" class="icon-img" width="48" height="48">
+            <p class="badge beta">Coming soon</p>
+            <h3>Attribution Helper</h3>
+            <p>Multi-touch attribution modeling and conversion path analysis for campaign optimization.</p>
+          </article>
+          <article class="card tool-card muted-card">
+            <img src="/img/icon-lock.svg" alt="" class="icon-img" width="48" height="48">
+            <p class="badge beta">Coming soon</p>
+            <h3>UTM Governance</h3>
+            <p>UTM parameter validation, naming conventions, and tracking consistency across campaigns.</p>
+          </article>
+          <article class="card tool-card muted-card">
+            <img src="/img/icon-clock.svg" alt="" class="icon-img" width="48" height="48">
+            <p class="badge beta">Coming soon</p>
+            <h3>Campaign Pacing</h3>
+            <p>Real-time pacing and delivery forecasts. Stay on track without manual spreadsheets.</p>
+          </article>
+          <article class="card tool-card muted-card">
+            <img src="/img/icon-hub.svg" alt="" class="icon-img" width="48" height="48">
+            <p class="badge beta">Coming soon</p>
+            <h3>Cross-channel Reporting</h3>
+            <p>Unified reporting across channels. One query, aggregated metrics and insights.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5. Integration section -->
+      <section id="integration" class="section-gap">
+        <article class="card docs">
+          <h2>Integration</h2>
+          <p>
+            Marketer MCP follows the <strong>MCP protocol</strong> — a standard for AI tool discovery
+            and execution. Connect your AI assistant (Claude, Cursor, or any MCP-compatible client)
+            to our hub endpoint.
+          </p>
+          <ul>
+            <li><strong>Bearer auth</strong> — Secure execution with API tokens</li>
+            <li><strong>Namespaced execution</strong> — Tools are called by namespace (e.g. <code>budget_buddy.plan_overview</code>)</li>
+            <li><strong>Structured I/O</strong> — JSON schemas for inputs and outputs</li>
+          </ul>
+          <a class="btn btn-ghost" href="/docs/">Read full docs →</a>
+        </article>
+      </section>
+
+      <!-- 6. Inline beta CTA -->
+      <section class="inline-cta section-gap">
+        <h3>Get early access to Budget Buddy and upcoming tools</h3>
+        <p>Join the beta to try Budget Buddy now and be first in line for Audience Planner, Creative QA, and more.</p>
+        <a class="btn btn-lg" href="/beta/">Join Beta</a>
+      </section>
+
+      <!-- 7. Footer -->
+      <footer class="footer">
+        <a href="/" class="footer-brand">marketer<span>mcp</span></a>
+        <div class="footer-links">
+          <a href="/features/">Features</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/about/">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/docs/">Docs</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/security.html">Security</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

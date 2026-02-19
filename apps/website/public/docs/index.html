@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation | Marketer MCP</title>
+    <meta
+      name="description"
+      content="Get started with Marketer MCP. Connect, discover tools, and start building with our API. Quickstart, API reference, and integration guides."
+    />
+    <link rel="canonical" href="https://marketermcp.com/docs/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marketermcp.com/docs/" />
+    <meta property="og:title" content="Documentation | Marketer MCP" />
+    <meta
+      property="og:description"
+      content="Everything you need to connect, discover tools, and start building with Marketer MCP."
+    />
+    <meta property="og:image" content="https://marketermcp.com/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Documentation | Marketer MCP" />
+    <meta
+      name="twitter:description"
+      content="Everything you need to connect, discover tools, and start building with Marketer MCP."
+    />
+    <meta name="twitter:image" content="https://marketermcp.com/og-image.svg" />
+    <meta name="theme-color" content="#FAFAFC" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+
+    <header class="container header">
+      <a href="/" class="brand">marketer<span>mcp</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/features/">Features</a>
+        <a href="/use-cases/">Use Cases</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/docs/">Docs</a>
+      </nav>
+      <a class="btn btn-small" href="/beta/">Join Beta</a>
+    </header>
+
+    <main class="container">
+      <!-- 1. Hero -->
+      <section class="hero hero-split card">
+        <div class="hero-text">
+          <p class="kicker">Documentation</p>
+          <h1>Get started with Marketer MCP</h1>
+          <p class="lead">
+            Everything you need to connect, discover tools, and start building.
+          </p>
+        </div>
+        <div class="hero-illustration">
+          <img src="/img/docs-getting-started.svg" alt="Get started with code" width="380" height="285">
+        </div>
+      </section>
+
+      <!-- 2. Quick links grid -->
+      <section class="section-gap">
+        <div class="grid grid-3">
+          <a href="#quickstart" class="card tool-card" style="text-decoration: none; color: inherit;">
+            <img src="/img/icon-bolt.svg" alt="" class="icon-img" width="48" height="48">
+            <p class="badge new">Start here</p>
+            <h3>Quickstart</h3>
+            <p>Get up and running in 5 minutes.</p>
+          </a>
+          <a href="#api-reference" class="card tool-card" style="text-decoration: none; color: inherit;">
+            <p class="badge">Reference</p>
+            <h3>API Reference</h3>
+            <p>Endpoints, auth, and response formats.</p>
+          </a>
+          <a href="#integration-guides" class="card tool-card" style="text-decoration: none; color: inherit;">
+            <p class="badge">Guides</p>
+            <h3>Integration Guides</h3>
+            <p>Connect with Claude, ChatGPT, and more.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 3. Quickstart section -->
+      <section id="quickstart" class="card docs section-gap">
+        <h2>Quickstart</h2>
+        <ol class="page-content" style="padding: 0; margin: 0;">
+          <li style="margin-bottom: 24px;">
+            <strong>Get your API key</strong> — <a href="/beta/">Join beta</a> to receive your API key.
+          </li>
+          <li style="margin-bottom: 24px;">
+            <strong>Test the health endpoint</strong>
+            <pre><code>curl https://api.marketermcp.com/health</code></pre>
+          </li>
+          <li style="margin-bottom: 24px;">
+            <strong>Discover available tools</strong>
+            <pre><code>curl -H "Authorization: Bearer YOUR_API_KEY" \
+  https://api.marketermcp.com/v1/tools</code></pre>
+          </li>
+          <li>
+            <strong>Execute Budget Buddy</strong>
+            <pre><code>curl -X POST \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"period": "2026-02"}' \
+  https://api.marketermcp.com/v1/tools/budget_buddy.plan_overview/execute</code></pre>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 4. API Reference overview -->
+      <section id="api-reference" class="card docs section-gap">
+        <h2>API Reference</h2>
+        <div class="page-content">
+          <h3>Endpoints</h3>
+          <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--border);">
+                <th style="text-align: left; padding: 12px 16px; font-family: 'Plus Jakarta Sans', sans-serif;">Method</th>
+                <th style="text-align: left; padding: 12px 16px; font-family: 'Plus Jakarta Sans', sans-serif;">Endpoint</th>
+                <th style="text-align: left; padding: 12px 16px; font-family: 'Plus Jakarta Sans', sans-serif;">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 12px 16px;"><code>GET</code></td>
+                <td style="padding: 12px 16px;"><code>/health</code></td>
+                <td style="padding: 12px 16px;">Service health check</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 12px 16px;"><code>GET</code></td>
+                <td style="padding: 12px 16px;"><code>/v1/tools</code></td>
+                <td style="padding: 12px 16px;">List available tools</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 12px 16px;"><code>POST</code></td>
+                <td style="padding: 12px 16px;"><code>/v1/tools/{tool_id}/execute</code></td>
+                <td style="padding: 12px 16px;">Execute a tool</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Authentication</h3>
+          <p>Use a Bearer token in the <code>Authorization</code> header for protected endpoints. Rate limits apply per API key.</p>
+
+          <h3>Response format</h3>
+          <p>Responses are JSON. Errors return structured responses with <code>error</code>, <code>message</code>, and <code>status</code> fields.</p>
+        </div>
+      </section>
+
+      <!-- 5. Integration guides -->
+      <section id="integration-guides" class="section-gap">
+        <h2 class="text-center">Integration Guides</h2>
+        <div class="grid grid-3">
+          <article class="card tool-card">
+            <p class="badge beta">Coming soon</p>
+            <h3>Claude Desktop</h3>
+            <p>Connect via MCP settings in Claude Desktop.</p>
+          </article>
+          <article class="card tool-card">
+            <p class="badge beta">Coming soon</p>
+            <h3>ChatGPT</h3>
+            <p>Use Marketer MCP as a custom action in ChatGPT.</p>
+          </article>
+          <article class="card tool-card">
+            <p class="badge beta">Coming soon</p>
+            <h3>Custom AI Agent</h3>
+            <p>Direct HTTP integration for your own AI agent.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 6. Inline beta CTA -->
+      <section class="inline-cta section-gap">
+        <h3>Get your API key and start building</h3>
+        <p>Join the beta to receive your API key and access all Marketer MCP tools.</p>
+        <a class="btn btn-lg" href="/beta/">Join Beta</a>
+      </section>
+
+      <!-- 7. Footer -->
+      <footer class="footer">
+        <a href="/" class="footer-brand">marketer<span>mcp</span></a>
+        <div class="footer-links">
+          <a href="/features/">Features</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/about/">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/docs/">Docs</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/security.html">Security</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

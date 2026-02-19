@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <linearGradient id="budget-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFC"/>
+      <stop offset="100%" style="stop-color:#EDE8F5"/>
+    </linearGradient>
+  </defs>
+  <!-- Main dashboard card -->
+  <rect x="50" y="40" width="300" height="200" rx="16" fill="url(#budget-card)" stroke="#EDE8F5" stroke-width="1"/>
+  <!-- Bar chart -->
+  <rect x="80" y="140" width="45" height="70" rx="6" fill="#7C5CFC" opacity="0.85"/>
+  <rect x="140" y="100" width="45" height="110" rx="6" fill="#6AC8C6" opacity="0.85"/>
+  <rect x="200" y="80" width="45" height="130" rx="6" fill="#7C5CFC" opacity="0.7"/>
+  <rect x="260" y="115" width="45" height="95" rx="6" fill="#8FBC8F" opacity="0.85"/>
+  <!-- Budget threshold line -->
+  <line x1="70" y1="95" x2="330" y2="95" stroke="#6B7280" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+  <circle cx="340" cy="95" r="4" fill="#6B7280" opacity="0.7"/>
+  <!-- Progress indicators -->
+  <circle cx="100" cy="55" r="12" fill="#EDE8F5" stroke="#7C5CFC" stroke-width="2"/>
+  <circle cx="100" cy="55" r="12" fill="none" stroke="#7C5CFC" stroke-width="2" stroke-dasharray="28 56" stroke-dashoffset="14" transform="rotate(-90 100 55)"/>
+  <circle cx="160" cy="55" r="12" fill="#EDE8F5" stroke="#6AC8C6" stroke-width="2"/>
+  <circle cx="160" cy="55" r="12" fill="none" stroke="#6AC8C6" stroke-width="2" stroke-dasharray="38 56" stroke-dashoffset="9" transform="rotate(-90 160 55)"/>
+  <circle cx="220" cy="55" r="12" fill="#EDE8F5" stroke="#7C5CFC" stroke-width="2"/>
+  <circle cx="220" cy="55" r="12" fill="none" stroke="#7C5CFC" stroke-width="2" stroke-dasharray="45 56" stroke-dashoffset="5.5" transform="rotate(-90 220 55)"/>
+  <circle cx="280" cy="55" r="12" fill="#EDE8F5" stroke="#8FBC8F" stroke-width="2"/>
+  <circle cx="280" cy="55" r="12" fill="none" stroke="#8FBC8F" stroke-width="2" stroke-dasharray="35 56" stroke-dashoffset="10.5" transform="rotate(-90 280 55)"/>
+</svg>

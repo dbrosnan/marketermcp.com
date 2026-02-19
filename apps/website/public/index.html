@@ -16,15 +16,15 @@
       property="og:description"
       content="Public MCP hub for marketing teams. Budget pacing, channel allocation, campaign QA — one endpoint, structured tools, real-time answers."
     />
-    <meta property="og:image" content="https://marketermcp.com/og-image.png" />
+    <meta property="og:image" content="https://marketermcp.com/og-image.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Marketer MCP | Connect once, access marketer-native tools" />
     <meta
       name="twitter:description"
       content="Public MCP hub for marketing teams. Budget pacing, channel allocation, campaign QA — one endpoint, structured tools, real-time answers."
     />
-    <meta name="twitter:image" content="https://marketermcp.com/og-image.png" />
-    <meta name="theme-color" content="#050610" />
+    <meta name="twitter:image" content="https://marketermcp.com/og-image.svg" />
+    <meta name="theme-color" content="#FAFAFC" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script type="application/ld+json">
       {
@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
@@ -54,58 +54,100 @@
   <body>
     <div class="bg-glow glow-a"></div>
     <div class="bg-glow glow-b"></div>
+
     <header class="container header">
-      <div class="brand">marketer<span>mcp</span></div>
-      <nav class="nav">
-        <a href="#tools">Tools</a>
+      <a href="/" class="brand">marketer<span>mcp</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/features/">Features</a>
+        <a href="/use-cases/">Use Cases</a>
+        <a href="/pricing/">Pricing</a>
         <a href="/blog/">Blog</a>
-        <a href="#docs">Docs</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="#security">Security</a>
+        <a href="/docs/">Docs</a>
       </nav>
-      <a class="btn btn-small" href="#waitlist">Join beta</a>
+      <a class="btn btn-small" href="/beta/">Join Beta</a>
     </header>
 
     <main class="container">
+      <!-- 1. Hero -->
       <section class="hero card">
-        <p class="kicker">Public MCP hub for marketing teams</p>
-        <h1>Connect once. Access marketer-native tools.</h1>
-        <p class="lead">
-          Build workflows on one endpoint and unlock specialized tools like Budget Buddy,
-          campaign planning assistants, and analytics copilots.
-        </p>
-        <div class="cta-row">
-          <a class="btn" href="#waitlist">Get early access</a>
-          <a class="btn btn-ghost" href="#docs">Read quickstart</a>
+        <div class="hero-split">
+          <div class="hero-text">
+            <p class="kicker">Public MCP hub for marketing teams</p>
+            <h1>Connect once. Access marketer-native tools.</h1>
+            <p class="lead">
+              Build workflows on one endpoint and unlock specialized tools like Budget Buddy,
+              campaign planning assistants, and analytics copilots. One connection, structured
+              tools, real-time answers.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-lg" href="/beta/">Get early access</a>
+              <a class="btn btn-ghost btn-lg" href="#quickstart">See how it works</a>
+            </div>
+            <p class="hero-social-proof">
+              Join <strong>500+ marketers</strong> on the waitlist
+            </p>
+          </div>
+          <div class="hero-illustration">
+            <img src="/img/hero-connect.svg" alt="Hub connecting marketing tools" width="380" height="285">
+          </div>
         </div>
       </section>
 
-      <section id="tools" class="grid">
-        <article class="card tool-card">
-          <p class="badge">First live tool</p>
-          <h2>Budget Buddy</h2>
-          <p>
-            Monitor monthly spend, compare channel allocation, and instantly see over-budget risk.
-          </p>
-          <ul>
-            <li>Budget vs actual channel rollups</li>
-            <li>Over-budget alerts for campaigns</li>
-            <li>Simple JSON input/output for automations</li>
-          </ul>
-        </article>
-        <article class="card tool-card">
-          <p class="badge beta">Coming next</p>
-          <h2>More marketer tools</h2>
-          <p>Audience planning, creative QA, and attribution helpers are on the roadmap.</p>
-          <ul>
-            <li>Namespaced tool registry</li>
-            <li>Versioned contracts</li>
-            <li>Secure execution policies</li>
-          </ul>
-        </article>
+      <!-- 2. Tools grid -->
+      <section id="tools" class="section-gap">
+        <h2 class="text-center">Tools</h2>
+        <div class="grid grid-3">
+          <article class="card tool-card">
+            <div class="card-illustration">
+              <img src="/img/budget-dashboard.svg" alt="Budget dashboard" width="200" height="140">
+            </div>
+            <p class="badge new">Live</p>
+            <h3>Budget Buddy</h3>
+            <p>
+              Monitor monthly spend, compare channel allocation, and instantly see over-budget risk.
+            </p>
+            <ul>
+              <li>Budget vs actual channel rollups</li>
+              <li>Over-budget alerts for campaigns</li>
+              <li>Simple JSON input/output for automations</li>
+            </ul>
+          </article>
+          <article class="card tool-card muted-card">
+            <p class="badge beta">Coming next</p>
+            <h3>Audience Planner</h3>
+            <p>Segment modeling and audience sizing for campaign planning.</p>
+            <ul>
+              <li>Namespaced tool registry</li>
+              <li>Versioned contracts</li>
+            </ul>
+          </article>
+          <article class="card tool-card muted-card">
+            <p class="badge beta">Coming next</p>
+            <h3>Creative QA</h3>
+            <p>Brand compliance and creative review helpers.</p>
+            <ul>
+              <li>Secure execution policies</li>
+              <li>Attribution helpers on roadmap</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section id="docs" class="card docs">
+      <!-- 3. Social proof / trust -->
+      <section class="social-proof section-gap">
+        <p class="count">500+</p>
+        <p>marketers on the waitlist</p>
+        <div class="social-proof-logos" aria-hidden="true">
+          <span class="logo-placeholder">Trusted by teams at</span>
+          <span class="logo-placeholder">[Logos]</span>
+        </div>
+        <blockquote class="social-proof-quote">
+          <p>"Finally, marketer-native tools in one place. Budget Buddy alone saved us hours."</p>
+        </blockquote>
+      </section>
+
+      <!-- 4. Quickstart / docs preview -->
+      <section id="quickstart" class="card docs section-gap">
         <h2>Quickstart</h2>
         <pre><code>GET /health
 GET /v1/tools
@@ -114,9 +156,14 @@ POST /v1/tools/budget_buddy.plan_overview/execute</code></pre>
           Use Bearer auth for execution routes. Discovery can be public or restricted by environment
           policy.
         </p>
+        <a class="btn btn-ghost" href="/docs/">Read full docs →</a>
       </section>
 
-      <section id="security" class="card security">
+      <!-- 5. Security -->
+      <section id="security" class="card security section-gap">
+        <div class="section-illustration">
+          <img src="/img/security-shield.svg" alt="Security shield" width="120" height="132">
+        </div>
         <h2>Built for public access</h2>
         <div class="security-grid">
           <div>
@@ -130,19 +177,44 @@ POST /v1/tools/budget_buddy.plan_overview/execute</code></pre>
         </div>
       </section>
 
-      <section id="waitlist" class="card waitlist">
+      <!-- 6. Inline beta CTA -->
+      <section class="inline-cta section-gap">
+        <h3>Ready to connect?</h3>
+        <p>Get early API access and first invites to new marketer tools.</p>
+        <a class="btn btn-lg" href="/beta/">Join Beta</a>
+      </section>
+
+      <!-- 7. Waitlist form -->
+      <section id="waitlist" class="card waitlist section-gap">
         <h2>Join the launch list</h2>
         <p>Get early API access, launch updates, and first invites to new marketer tools.</p>
         <form class="waitlist-form" action="#" method="post">
-          <input type="email" placeholder="you@company.com" aria-label="Email address" />
+          <input
+            type="email"
+            name="email"
+            placeholder="you@company.com"
+            aria-label="Email address for waitlist signup"
+            required
+          />
           <button class="btn" type="submit">Request invite</button>
         </form>
+        <p class="urgency-banner">Limited spots — join 500+ marketers already on the list</p>
       </section>
 
+      <!-- 8. Footer -->
       <footer class="footer">
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/security.html">Security</a>
+        <a href="/" class="footer-brand">marketer<span>mcp</span></a>
+        <div class="footer-links">
+          <a href="/features/">Features</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/about/">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/docs/">Docs</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/security.html">Security</a>
+        </div>
       </footer>
     </main>
   </body>

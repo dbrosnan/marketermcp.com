@@ -1,0 +1,39 @@
+{
+  "font": {
+    "family": {
+      "heading": { "value": "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif", "type": "fontFamily" },
+      "body": { "value": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif", "type": "fontFamily" },
+      "mono": { "value": "'JetBrains Mono', 'Fira Code', monospace", "type": "fontFamily" }
+    },
+    "weight": {
+      "regular": { "value": "400", "type": "fontWeight" },
+      "medium": { "value": "500", "type": "fontWeight" },
+      "semibold": { "value": "600", "type": "fontWeight" },
+      "bold": { "value": "700", "type": "fontWeight" },
+      "extrabold": { "value": "800", "type": "fontWeight" }
+    },
+    "size": {
+      "xs": { "value": "0.75rem", "type": "fontSize" },
+      "sm": { "value": "0.875rem", "type": "fontSize" },
+      "base": { "value": "1rem", "type": "fontSize" },
+      "lg": { "value": "1.125rem", "type": "fontSize" },
+      "xl": { "value": "1.25rem", "type": "fontSize" },
+      "2xl": { "value": "1.5rem", "type": "fontSize" },
+      "3xl": { "value": "clamp(1.5rem, 2.5vw, 2rem)", "type": "fontSize" },
+      "4xl": { "value": "clamp(2rem, 4vw, 2.75rem)", "type": "fontSize" },
+      "5xl": { "value": "clamp(2.25rem, 5vw, 3.5rem)", "type": "fontSize" }
+    },
+    "lineHeight": {
+      "tight": { "value": "1.15", "type": "lineHeight" },
+      "snug": { "value": "1.3", "type": "lineHeight" },
+      "normal": { "value": "1.6", "type": "lineHeight" },
+      "relaxed": { "value": "1.75", "type": "lineHeight" }
+    },
+    "tracking": {
+      "tight": { "value": "-0.01em", "type": "letterSpacing" },
+      "normal": { "value": "0", "type": "letterSpacing" },
+      "wide": { "value": "0.04em", "type": "letterSpacing" },
+      "wider": { "value": "0.08em", "type": "letterSpacing" }
+    }
+  }
+}
