@@ -28,7 +28,7 @@ jobs:
       name: staging
       url: https://staging.marketermcp.com
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v4
         with:
@@ -49,7 +49,7 @@ jobs:
     needs: deploy-staging
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v4
         with:
@@ -82,7 +82,7 @@ jobs:
       name: production
       url: https://marketermcp.com
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v4
         with:
@@ -103,7 +103,7 @@ jobs:
     needs: deploy-production
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v4
         with:
