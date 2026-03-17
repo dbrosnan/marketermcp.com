@@ -85,7 +85,7 @@ packages/
 - **Prefix**: MCP
 - **Board**: [KANBAN.md](KANBAN.md)
 - **Foreman**: [GTM-Project-Foreman](../GTM-Project-Foreman/KANBAN.md)
-- **Next ID**: MCP-011
+- **Next ID**: MCP-044
 
 ### Rules
 - Every card must have at least one `#FORE-XXX` tag linking to a Foreman epic
